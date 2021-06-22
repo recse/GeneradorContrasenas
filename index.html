@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Generador de contraseñas</title>
+        <link rel="stylesheet" href="style.css" />
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <div class="contra-contenedor">
+            <div class="contra-header">
+                <div class="contra">
+                    <span id="contra">l823Zs78#Css09@</span>
+                    <button id="copiar">Copiar</button>
+                </div>
+            </div>
+            <div class="contra-body">
+                <div class="form-control">
+                    <label for="lon">Longitud de la contraseña</label>
+                    <input id="lon" value="15" type="number" min="2" max="30" />
+                </div>
+                <div class="form-control">
+                    <label for="mayus">Contiene mayúsculas</label>
+                    <input id="mayus" type="checkbox" />
+                </div>
+                <div class="form-control">
+                    <label for="minus">Contiene minúsculas</label>
+                    <input id="minus" type="checkbox" />
+                </div>
+                <div class="form-control">
+                    <label for="numero">Contiene números</label>
+                    <input id="numero" type="checkbox" />
+                </div>
+                <div class="form-control">
+                    <label for="simbolo">Contiene símbolos</label>
+                    <input id="simbolo" type="checkbox" />
+                </div>
+                <button class="generar" id="generar">
+                    Generar contraseña
+                </button>
+            </div>
+        </div>
+    </body>
+</html>
